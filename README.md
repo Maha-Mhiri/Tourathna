@@ -11,7 +11,7 @@ TOURATHNA (Notre Héritage) est une plateforme web dédiée à la digitalisation
 * **Commandes en Ligne :** Interface simple permettant de simuler une commande de produits directement auprès des artisans.
 * **Galerie de Formation :** Section dédiée à l'apprentissage via des tutoriels vidéo sur les métiers du tissage, du cuivre et de la poterie.
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 * **HTML5 :** Structure sémantique de l'interface.
 * **CSS3 :** Design personnalisé utilisant des polices spécifiques (Amiri et Poppins) pour refléter l'identité tunisienne.
