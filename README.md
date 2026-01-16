@@ -27,7 +27,7 @@ L'objectif de **TOURATHNA** est de pallier le manque de digitalisation du secteu
 
 1. **Cloner le dépôt** :
     ```bash
-    git clone [https://github.com/votre-compte/tourathna.git](https://github.com/votre-compte/tourathna.git)
+    git clone [https://github.com/Maha-Mhiri/tourathna.git](https://github.com/Maha-Mhiri/tourathna.git)
     ```
 2.  **Structure des fichiers** : Assurez-vous que les dossiers `images/` et `vidéos/` sont bien présents à la racine.
 3.  **Lancer le projet** : Ouvrez le fichier `indexx.html` dans n'importe quel navigateur moderne (Chrome, Firefox, Edge).
