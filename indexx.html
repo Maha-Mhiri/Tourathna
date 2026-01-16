@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURATHNA</title>
+    <link rel="stylesheet" href="stylee.css">
+	<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header>
+    <div class="header-left">
+        <img src="images/logo.png" alt="Logo TOURATHNA" class="logo">
+        <h1>TOURATHNA</h1>
+    </div>
+    <nav>
+        <a href="#description">À propos</a>
+        <a href="#artisans">Artisans</a>
+        <a href="#contact">Contact Artisan</a>
+        <a href="#espaceArtisan">Espace Artisan</a>
+        <a href="#client">Espace Client</a>
+        <a href="#formations">Formations</a>
+        <a href="#contactezNous">Rejoignez-nous</a>
+    </nav>
+</header>
+
+<!-- SECTION DESCRIPTION -->
+<section id="description" class="description-box">
+    <h2>À propos de TOURATHNA</h2>
+    <p>
+        Le secteur artisanal en Tunisie représente une richesse culturelle et économique essentielle.
+        Il constitue une partie importante de notre identité nationale, grâce à la diversité des métiers
+        traditionnels tels que la poterie, la broderie, le cuivre, le bois, le tressage et bien d’autres.
+        Ce patrimoine vivant témoigne d’un savoir-faire transmis de génération en génération.
+    </p>
+
+    <p>
+        Malgré son importance, le secteur artisanal souffre d’un manque de digitalisation.
+        Plusieurs artisans ne disposent d’aucune visibilité en ligne, ce qui limite leur accès
+        aux clients, aux marchés nationaux et internationaux, ainsi qu’aux opportunités de développement.
+        De plus, beaucoup de jeunes ne s’intéressent plus à ces métiers en raison du manque de formation,
+        de modernisation et de plateformes qui valorisent ces talents.
+    </p>
+
+    <p>
+        Certains métiers artisanaux sont même en voie de disparition. Les maîtres-artisans ont
+        du mal à transmettre leurs compétences à la nouvelle génération, ce qui menace la
+        préservation de notre patrimoine immatériel.
+    </p>
+
+    <p>
+        C’est pour répondre à ces défis que nous avons créé <strong>TOURATHNA</strong>.
+        Cette plateforme permet :
+        <ul>
+            <li>aux artisans de présenter leurs produits et leurs formations,</li>
+            <li>aux clients de découvrir facilement des artisans partout en Tunisie,</li>
+            <li>de passer des commandes en ligne,</li>
+            <li>de contacter directement un artisan,</li>
+            <li>et de suivre des vidéos de formation pour apprendre ou préserver les métiers.</li>
+        </ul>
+    </p>
+
+    <p>
+        <strong>TOURATHNA</strong> est plus qu’un simple site : c’est un pont entre le patrimoine de nos ancêtres
+        et les générations futures, afin de protéger, valoriser et moderniser le secteur artisanal tunisien.
+    </p>
+</section>
+
+<!-- SECTION ARTISANS -->
+<section id="artisans">
+    <h2>Nos Artisans</h2>
+    <div id="artisanList" class="grid"></div>
+</section>
+
+<!-- SECTION CONTACT -->
+<section id="contact">
+    <h2>Contactez un Artisan</h2>
+    <form id="contactForm">
+        <label>Choisir un artisan :</label>
+        <select id="artisanSelect"></select>
+        <label>Votre email :</label>
+        <input type="email" required>
+        <label>Message :</label>
+        <textarea required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+    <p id="msg"></p>
+</section>
+
+<!-- ESPACE ARTISAN -->
+<section id="espaceArtisan">
+    <h2>Espace Artisan</h2>
+    <form id="addArticleForm">
+        <h3>Publier un article</h3>
+        <label>Nom de l'article :</label>
+        <input type="text" id="titreArticle" required>
+        <label>Référence :</label>
+        <input type="text" id="refArticle" required pattern="[A-Z][0-9]+" placeholder="Ex : A001">
+        <label>Prix :</label>
+        <input type="number" id="prixArticle" min="1" required>
+        <label>Description  :</label>
+        <input type="text" id="descArticle" required>
+		<label>Image de l'article :</label>
+		<input type="file" id="imgArticle" accept="image/*" required>
+        <label>Choisir l'artisan :</label>
+        <select id="articleArtisanSelect"></select>
+        <button type="submit">Publier</button>
+    </form>
+    <div id="joinResponse"></div>
+	<div id="articlesParArtisan"></div>
+
+</section>
+
+<!-- ESPACE CLIENT -->
+<section id="client">
+    <h2>Espace Client</h2>
+    <div class="card">
+        <h3>Rechercher un artisan</h3>
+        <input type="text" id="searchInput" placeholder="Tapez un nom...">
+        <button onclick="chercherArtisan()">Rechercher</button>
+        <div id="searchResult"></div>
+    </div>
+    <div class="card">
+        <h3>Commander un article</h3>
+        <label>Choisir un artisan :</label>
+        <select id="artisanCommandeSelect"></select>
+        <label>Choisir l'article :</label>
+		<select id="articleRefSelect"></select>
+        <label>Quantité :</label>
+        <input type="number" id="articleQty" min="1" value="1">
+        <button onclick="commanderArticle()">Envoyer</button>
+        <p id="commandeMsg"></p>
+    </div>
+</section>
+
+<!-- FORMATIONS -->
+<section id="formations">
+    <h2>Formations Artisanales</h2>
+    <p style="text-align:center;">Découvrez des formations artisanales pour apprendre et préserver nos métiers traditionnels.</p>
+    <div id="videoGallery" class="grid"></div>
+</section>
+
+<!-- CONTACTEZ-NOUS -->
+<section id="contactezNous">
+    <h2>Rejoindre TOURATHNA</h2>
+    <p class="intro">
+        Vous êtes un artisan et vous souhaitez rejoindre notre plateforme ?  
+        Remplissez ce formulaire et nous vous contacterons.
+    </p>
+    <form id="joinForm">
+        <label>Nom et prénom :</label>
+        <input type="text" id="joinName" required>
+        <label>Email :</label>
+        <input type="email" id="joinMail" required>
+        <label>Numéro de téléphone :</label>
+        <input type="tel" id="joinTel" required pattern="[0-9]{8}"
+    maxlength="8" placeholder="Ex : 22123456">
+        <label>Spécialité artisanale :</label>
+        <input type="text" id="joinSpec" placeholder="Ex : poterie, broderie..." required>
+        <label>Localisation :</label>
+        <input type="text" id="joinLoc" required>
+        <label>Message (optionnel) :</label>
+        <textarea id="joinMsg" placeholder="Présentez brièvement votre travail..."></textarea>
+        <button type="submit">Envoyer la demande</button>
+    </form>
+    <p id="joinResponse1"></p>
+</section>
+  <footer>
+	<p>&COPY; Site réalisé par: Mhiri Maha BI2 - Maghraoui Wejdene BI1 - Ayari Yassine BI1
+	</p>
+  </footer>
+</body>
+	<script src="scriptt.js"></script>
+</html>
+
