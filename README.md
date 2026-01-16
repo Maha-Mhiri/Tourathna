@@ -6,6 +6,8 @@ Ce projet a été réalisé dans le cadre du cours **"Programmation Web"** à l'
 
 L'objectif de **TOURATHNA** est de pallier le manque de digitalisation du secteur artisanal en Tunisie. La plateforme permet de sauvegarder le patrimoine immatériel en offrant une visibilité en ligne aux artisans et en proposant des ressources éducatives pour la transmission du savoir-faire aux nouvelles générations.
 
+TOURATHNA : Un pont entre le patrimoine de nos ancêtres et les générations futures.
+
 ## Fonctionnalités
 
 * **Répertoire des Artisans** : Affichage dynamique des profils incluant nom, localisation, téléphone et email.
@@ -44,13 +46,3 @@ tourathna/
 └── README.md           # Documentation du projet
 
 
-## Auteurs
-Ce projet a été conçu et développé par :
-
-Mhiri Maha (BI2)
-
-Maghraoui Wejdene (BI1)
-
-Ayari Yassine (BI1)
-
-TOURATHNA : Un pont entre le patrimoine de nos ancêtres et les générations futures.
