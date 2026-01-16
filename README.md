@@ -1,48 +1,66 @@
-# TOURATHNA 
+Projet TOURATHNA : Plateforme de l'Artisanat Tunisien
+Ce projet a été réalisé dans le cadre du cours "Programmation Web" à l'École Supérieure d'Économie Numérique (ESEN), Université de la Manouba (A.U 2025-2026).
 
-TOURATHNA (Notre Héritage) est une plateforme web dédiée à la digitalisation et à la préservation de l'artisanat tunisien. Elle sert de pont entre les artisans traditionnels de toute la Tunisie et les clients ou passionnés, offrant une vitrine numérique, un moyen de communication directe et des ressources éducatives.
+Objectif
+L'objectif est de développer une plateforme web interactive pour digitaliser et valoriser le secteur artisanal tunisien. TOURATHNA sert de pont entre les artisans traditionnels et les clients modernes, tout en luttant contre la disparition des métiers ancestraux par la formation vidéo.
 
- Fonctionnalités
+Fonctionnalités
+Répertoire des Artisans : Affichage dynamique d'une liste d'artisans avec leurs coordonnées (nom, tel, mail, localisation).
 
-* **Répertoire des Artisans :** Un annuaire visuel incluant la localisation, le téléphone et l'email de chaque artisan.
-* **Catalogue de Produits :** Consultation d'articles variés (poterie, cuir, broderie, etc.) avec références, prix et descriptions détaillées.
-* **Espace Client & Recherche :** Système de recherche en temps réel pour trouver un artisan par son nom et consulter ses articles.
-* **Espace Artisan :** Outils permettant aux artisans d'ajouter de nouveaux articles avec image et détails techniques.
-* **Commandes en Ligne :** Interface simple permettant de simuler une commande de produits directement auprès des artisans.
-* **Galerie de Formation :** Section dédiée à l'apprentissage via des tutoriels vidéo sur les métiers du tissage, du cuivre ,de la poterie...
+Catalogue d'Articles : Présentation détaillée des produits artisanaux (poterie, cuir, cuivre, etc.) avec références et prix.
 
-##  Technologies Utilisées
+Espace Client (Recherche & Commande) : * Moteur de recherche en temps réel pour trouver un artisan par son nom.
 
-* **HTML5 :** Structure sémantique de l'interface.
-* **CSS3 :** Design personnalisé utilisant des polices spécifiques (Amiri et Poppins) pour refléter l'identité tunisienne.
-* **JavaScript (Vanilla) :** Logique de manipulation du DOM pour la recherche, la gestion des formulaires et le rendu dynamique des données.
+Système de passation de commande calculant automatiquement le prix total selon la quantité.
 
-##  Structure du Projet
+Espace Artisan (Gestion de contenu) : Interface permettant aux artisans d'ajouter de nouveaux articles en ligne avec téléchargement d'images.
 
-* `indexx.html` : La page d'accueil principale regroupant toutes les sections.
-* `stylee.css` : Styles personnalisés, incluant le design adaptatif (responsive) et les grilles de mise en page.
-* `scriptt.js` : Logique de traitement des données, moteur de recherche et interactivité des formulaires.
-* `/images` : Dossier contenant les photos des artisans et des produits.
-* `/vidéos` : Contenu éducatif pour les métiers traditionnels.
+Formations Vidéo : Galerie de tutoriels intégrée pour apprendre et préserver les métiers traditionnels (Tissage, Bijoux, Poterie, etc.).
 
-##  Comment exécuter le projet
+Communication Directe : Formulaires de contact pour envoyer des messages aux artisans ou demander à rejoindre la plateforme.
 
-1.  **Cloner le dépôt :**
-    ```bash
-    git clone [https://github.com/votre-utilisateur/tourathna.git](https://github.com/votre-utilisateur/tourathna.git)
-    ```
-2.  **Accéder au dossier :**
-    ```bash
-    cd tourathna
-    ```
-3.  **Lancer le projet :**
-    Ouvrez simplement le fichier `indexx.html` dans n'importe quel navigateur moderne.
+Prérequis
+Un navigateur web moderne (Google Chrome, Firefox, Edge, Safari).
 
-## Auteurs
-Ce projet a été réalisé par :
-* **Mhiri Maha** (BI2)
-* **Maghraoui Wejdene** (BI1)
-* **Ayari Yassine** (BI1)
+Git (pour cloner le dépôt).
 
----
-*Projet créé pour protéger, valoriser et moderniser le secteur artisanal tunisien.*
+Installation
+Cloner le dépôt :
+
+Bash
+
+git clone https://github.com/votre-utilisateur/tourathna.git
+cd tourathna
+Ou téléchargez et extrayez le code source dans un dossier.
+
+Vérifier la structure : Assurez-vous que les dossiers images/ et vidéos/ sont bien présents à la racine du projet.
+
+Lancer le Projet
+Il n'est pas nécessaire d'installer de serveur complexe pour ce projet (utilisation de Vanilla JavaScript).
+
+Ouvrez le dossier racine du projet.
+
+Double-cliquez sur le fichier indexx.html.
+
+Le site s'ouvrira dans votre navigateur par défaut.
+
+Structure du Projet
+Plaintext
+
+tourathna/
+├── images/             # Photos des artisans, produits et logos
+├── vidéos/             # Vidéos de formation artisanale (tissage, cuivre, etc.)
+├── indexx.html         # Page d'accueil et structure principale du site
+├── scriptt.js          # Logique métier, recherche et gestion des données
+├── stylee.css          # Design, typographies (Amiri) et mise en page responsive
+└── README.md           # Ce fichier
+Auteurs
+Projet réalisé par l'équipe :
+
+Mhiri Maha (BI2)
+
+Maghraoui Wejdene (BI1)
+
+Ayari Yassine (BI1)
+
+Projet créé pour protéger, valoriser et moderniser le patrimoine immatériel tunisien.
