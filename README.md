@@ -9,7 +9,7 @@ TOURATHNA (Notre Héritage) est une plateforme web dédiée à la digitalisation
 * **Espace Client & Recherche :** Système de recherche en temps réel pour trouver un artisan par son nom et consulter ses articles.
 * **Espace Artisan :** Outils permettant aux artisans d'ajouter de nouveaux articles avec image et détails techniques.
 * **Commandes en Ligne :** Interface simple permettant de simuler une commande de produits directement auprès des artisans.
-* **Galerie de Formation :** Section dédiée à l'apprentissage via des tutoriels vidéo sur les métiers du tissage, du cuivre et de la poterie.
+* **Galerie de Formation :** Section dédiée à l'apprentissage via des tutoriels vidéo sur les métiers du tissage, du cuivre ,de la poterie...
 
 ##  Technologies Utilisées
 
