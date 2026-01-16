@@ -1,61 +1,51 @@
-Projet TOURATHNA : Plateforme de l'Artisanat Tunisien
-Ce projet a été réalisé dans le cadre du cours "Programmation Web" à l'École Supérieure d'Économie Numérique (ESEN), Université de la Manouba (A.U 2025-2026).
+# TOURATHNA 🏺 - Plateforme de l'Artisanat Tunisien
 
-Objectif
-L'objectif est de développer une plateforme web interactive pour digitaliser et valoriser le secteur artisanal tunisien. TOURATHNA sert de pont entre les artisans traditionnels et les clients modernes, tout en luttant contre la disparition des métiers ancestraux par la formation vidéo.
+Ce projet a été réalisé dans le cadre du cours **"Programmation Web"** à l'École Supérieure d'Économie Numérique (**ESEN**), Université de la Manouba (A.U 2025-2026).
 
-Fonctionnalités
-Répertoire des Artisans : Affichage dynamique d'une liste d'artisans avec leurs coordonnées (nom, tel, mail, localisation).
+## Objectif
 
-Catalogue d'Articles : Présentation détaillée des produits artisanaux (poterie, cuir, cuivre, etc.) avec références et prix.
+L'objectif de **TOURATHNA** est de pallier le manque de digitalisation du secteur artisanal en Tunisie. La plateforme permet de sauvegarder le patrimoine immatériel en offrant une visibilité en ligne aux artisans et en proposant des ressources éducatives pour la transmission du savoir-faire aux nouvelles générations.
 
-Espace Client (Recherche & Commande) : * Moteur de recherche en temps réel pour trouver un artisan par son nom.
+## Fonctionnalités
 
-Système de passation de commande calculant automatiquement le prix total selon la quantité.
+* **Répertoire des Artisans** : Affichage dynamique des profils incluant nom, localisation, téléphone et email.
+* **Catalogue de Produits** : Visualisation des articles avec photos, descriptions, références et prix.
+* **Espace Client (Interactif)** : 
+    * Moteur de recherche par nom d'artisan.
+    * Module de commande avec calcul automatique du total (Quantité x Prix).
+* **Espace Artisan** : Interface permettant d'ajouter de nouveaux articles via un formulaire (avec téléchargement d'images).
+* **Formations Vidéo** : Galerie multimédia proposant des tutoriels sur le tissage, la poterie, le cuivre et la bijouterie.
+* **Système de Contact** : Formulaires dédiés pour contacter un artisan spécifique ou pour soumettre une demande d'adhésion à TOURATHNA.
 
-Espace Artisan (Gestion de contenu) : Interface permettant aux artisans d'ajouter de nouveaux articles en ligne avec téléchargement d'images.
+## Technologies Utilisées
 
-Formations Vidéo : Galerie de tutoriels intégrée pour apprendre et préserver les métiers traditionnels (Tissage, Bijoux, Poterie, etc.).
+* **HTML5** : Structure sémantique du site.
+* **CSS3** : Mise en page responsive, polices Google Fonts (Amiri et Poppins) et design inspiré du patrimoine.
+* **JavaScript (Vanilla)** : Gestion du DOM, moteur de recherche, logique des paniers et rendu dynamique des données sans framework externe.
 
-Communication Directe : Formulaires de contact pour envoyer des messages aux artisans ou demander à rejoindre la plateforme.
+## Installation et Utilisation
 
-Prérequis
-Un navigateur web moderne (Google Chrome, Firefox, Edge, Safari).
+1. **Cloner le dépôt** :
+    ```bash
+    git clone [https://github.com/votre-compte/tourathna.git](https://github.com/votre-compte/tourathna.git)
+    ```
+2.  **Structure des fichiers** : Assurez-vous que les dossiers `images/` et `vidéos/` sont bien présents à la racine.
+3.  **Lancer le projet** : Ouvrez le fichier `indexx.html` dans n'importe quel navigateur moderne (Chrome, Firefox, Edge).
 
-Git (pour cloner le dépôt).
+## Structure du Projet
 
-Installation
-Cloner le dépôt :
-
-Bash
-
-git clone https://github.com/votre-utilisateur/tourathna.git
-cd tourathna
-Ou téléchargez et extrayez le code source dans un dossier.
-
-Vérifier la structure : Assurez-vous que les dossiers images/ et vidéos/ sont bien présents à la racine du projet.
-
-Lancer le Projet
-Il n'est pas nécessaire d'installer de serveur complexe pour ce projet (utilisation de Vanilla JavaScript).
-
-Ouvrez le dossier racine du projet.
-
-Double-cliquez sur le fichier indexx.html.
-
-Le site s'ouvrira dans votre navigateur par défaut.
-
-Structure du Projet
-Plaintext
-
+```text
 tourathna/
-├── images/             # Photos des artisans, produits et logos
-├── vidéos/             # Vidéos de formation artisanale (tissage, cuivre, etc.)
-├── indexx.html         # Page d'accueil et structure principale du site
-├── scriptt.js          # Logique métier, recherche et gestion des données
-├── stylee.css          # Design, typographies (Amiri) et mise en page responsive
-└── README.md           # Ce fichier
-Auteurs
-Projet réalisé par l'équipe :
+├── images/             # Logos, photos des artisans et des articles
+├── vidéos/             # Contenu multimédia des formations
+├── indexx.html         # Structure HTML principale du site
+├── stylee.css          # Feuilles de style et design responsive
+├── scriptt.js          # Logique métier et interactivité
+└── README.md           # Documentation du projet
+
+
+## Auteurs
+Ce projet a été conçu et développé par :
 
 Mhiri Maha (BI2)
 
@@ -63,4 +53,4 @@ Maghraoui Wejdene (BI1)
 
 Ayari Yassine (BI1)
 
-Projet créé pour protéger, valoriser et moderniser le patrimoine immatériel tunisien.
+TOURATHNA : Un pont entre le patrimoine de nos ancêtres et les générations futures.
